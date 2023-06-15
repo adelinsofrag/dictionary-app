@@ -19,7 +19,7 @@ WebApp based on an AP
   - [x] basic UI
   - [x] request cu ajutorul functiei
   - [x] error handling
-- [ ] Implementeaza UI landingpage (Index)
+- [x] Implementeaza UI landingpage (Index)
 - [ ] Implementeaza UI dictionary page
   - [ ] UI form
   - [ ] UI lista ultimele n cuvinte cautate
