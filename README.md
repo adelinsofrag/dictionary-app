@@ -19,7 +19,7 @@ WebApp based on an AP
 - [x] Implementeaza form
   - [x] basic UI
   - [x] request cu ajutorul functiei
-  - [ ] error handling
+  - [x] error handling
 - [ ] Implementeaza UI landingpage (Index)
 - [ ] Implementeaza UI dictionary page
   - [ ] UI form
