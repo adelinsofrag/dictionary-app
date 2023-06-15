@@ -28,4 +28,4 @@ WebApp based on an AP
     - [x] O componenta de link
   - [ ] UI lista ultimele n cuvinte cautate
   - [ ] Rescrie si curata codul din script.js
-  - [ ] Update UI ca sa se apropie de modelul initial
+  - [x] Update UI ca sa se apropie de modelul initial
