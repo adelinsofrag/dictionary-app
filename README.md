@@ -13,7 +13,6 @@ WebApp based on an AP
   - [x] Contact.html
   - [x] Dictionary.html
 - [x] Implementeaza footer
-- [ ] Implementeaza header
 - [x] Implementeaza functia de preluare a datelor din API
 - [x] Implementeaza functia de procesare a datelor si filtrare a keys necesare pentru site
 - [x] Implementeaza form
@@ -28,4 +27,3 @@ WebApp based on an AP
     - [ ] O componenta card
     - [ ] O componenta audio
     - [ ] O componenta de link
-- [ ] Implementeaza UI Contact.html
