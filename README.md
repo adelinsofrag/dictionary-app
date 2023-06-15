@@ -7,15 +7,15 @@ WebApp based on an AP
 ### Tasks
 
 - [x] Adauga taskuri
-- [ ] Link CDN Bootstrap
-- [ ] Implementeaza navigation bar + paginile necesare (fara continut)
-  - [ ] Index.html
-  - [ ] Contact.html
-  - [ ] Dictionary.html
+- [x] Link CDN Bootstrap
+- [x] Implementeaza navigation bar + paginile necesare (fara continut)
+  - [x] Index.html
+  - [x] Contact.html
+  - [x] Dictionary.html
 - [ ] Implementeaza footer
 - [ ] Implementeaza header
-- [ ] Implementeaza functia de preluare a datelor din API
-- [ ] Implementeaza functia de procesare a datelor si filtrare a keys necesare pentru site
+- [x] Implementeaza functia de preluare a datelor din API
+- [x] Implementeaza functia de procesare a datelor si filtrare a keys necesare pentru site
 - [ ] Implementeaza form
   - [ ] basic UI
   - [ ] request cu ajutorul functiei
