@@ -12,7 +12,7 @@ WebApp based on an AP
   - [x] Index.html
   - [x] Contact.html
   - [x] Dictionary.html
-- [ ] Implementeaza footer
+- [x] Implementeaza footer
 - [ ] Implementeaza header
 - [x] Implementeaza functia de preluare a datelor din API
 - [x] Implementeaza functia de procesare a datelor si filtrare a keys necesare pentru site
