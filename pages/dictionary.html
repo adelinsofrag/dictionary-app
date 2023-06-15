@@ -27,7 +27,9 @@
   >
     <nav class="container-fluid navbar navbar-expand-lg shadow-sm rounded mt-3 sticky-top bg-white">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Dictionary App</a>
+        <a class="navbar-brand" href="../index.html">
+          <img src="./../assets/images/logo.jpg" height="40px" width="auto" />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -54,7 +56,7 @@
     </nav>
 
     <section>
-      <form id="searchForm">
+      <form id="searchForm" class="my-5">
         <div class="my-3">
           <label for="searchInputWord" class="form-label">Search</label>
           <input
@@ -66,17 +68,24 @@
           />
         </div>
 
-        <div id="responseMsgSuccess" class="alert alert-success d-none" role="alert">Success</div>
-        <div id="responseMsgError" class="alert alert-danger d-none" role="alert"></div>
-
-        <button type="submit" class="btn btn-outline-info" id="submitSearchForm">
+        <button type="submit" class="btn btn-outline-success" id="submitSearchForm">
           <span class="material-symbols-outlined"> search </span>
           Search Word
         </button>
       </form>
+
+      <div id="responseMsgSuccess" class="alert alert-success d-none" role="alert">Success</div>
+      <div id="responseMsgError" class="alert alert-danger d-none" role="alert"></div>
     </section>
 
-    <section class="my-3 text-dark" id="responseContent"></section>
+    <section class="my-3 text-dark" id="responseContent">
+      <p class="card-text placeholder-glow">
+        <span class="placeholder col-8"></span>
+        <span class="placeholder col-6"></span>
+        <span class="placeholder col-4"></span>
+        <span class="placeholder col-7"></span>
+      </p>
+    </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
