@@ -16,9 +16,9 @@ WebApp based on an AP
 - [ ] Implementeaza header
 - [x] Implementeaza functia de preluare a datelor din API
 - [x] Implementeaza functia de procesare a datelor si filtrare a keys necesare pentru site
-- [ ] Implementeaza form
-  - [ ] basic UI
-  - [ ] request cu ajutorul functiei
+- [x] Implementeaza form
+  - [x] basic UI
+  - [x] request cu ajutorul functiei
   - [ ] error handling
 - [ ] Implementeaza UI landingpage (Index)
 - [ ] Implementeaza UI dictionary page

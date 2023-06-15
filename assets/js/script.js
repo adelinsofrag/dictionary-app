@@ -1,12 +1,5 @@
 // TODO: split into multiple JS files
 
-// User input
-let language = "en";
-let searchItem = "morning";
-
-// Prepare API URL with users input
-const API_SOURCE = `https://api.dictionaryapi.dev/api/v2/entries/${language}/${searchItem}`;
-
 /**
  * @function formatResponse
  *
@@ -28,11 +21,29 @@ function formatResponse(data) {
 function drawMarkUp(data) {
   console.table(data);
 
-  return document.getElementById("demo").innerHTML = data;
+  return (document.getElementById("demo").innerHTML = data.inputWord);
 }
 
-// Fetch data
-fetch(API_SOURCE)
-  .then((response) => response.json())
-  .then((responseText) => formatResponse(responseText))
-  .then((formattedResponse) => drawMarkUp(formattedResponse));
+/* ---------------------------------- */
+/*         handle submit event        */
+/* ---------------------------------- */
+const submitSearchForm = document.getElementById("submitSearchForm");
+const searchForm = document.getElementById("searchForm");
+searchForm.addEventListener("submit", (e) => handleSearchFormSubmit(e));
+
+function handleSearchFormSubmit(e) {
+  e.preventDefault();
+  console.log("Submitted with value:", e.target[0].value);
+
+  // User input
+  let language = "en";
+  let searchItem = e.target[0].value;
+
+  // Prepare API URL with users input
+  const API_SOURCE = `https://api.dictionaryapi.dev/api/v2/entries/${language}/${searchItem}`;
+
+  return fetch(API_SOURCE)
+    .then((response) => response.json())
+    .then((responseText) => formatResponse(responseText))
+    .then((formattedResponse) => drawMarkUp(formattedResponse));
+}
