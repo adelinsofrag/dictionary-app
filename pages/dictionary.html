@@ -33,22 +33,56 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/dictionary.html">Dictionary</a>
+              <a class="nav-link" href="./dictionary.html">Dictionary</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/contact.html">Contact</a>
+              <a class="nav-link" href="./contact.html">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <h1>Index</h1>
+    <h1>Dictionary</h1>
+
+    <section>
+      <form id="searchForm">
+        <div class="mb-3">
+          <label for="searchInputWord" class="form-label">Enter the word</label>
+          <input
+            type="text"
+            class="form-control"
+            id="searchInputWord"
+            aria-describedby="searchInputWord"
+            placeholder="e.g. morning"
+          />
+        </div>
+
+        <div id="responseMsgSuccess" class="alert alert-success d-none" role="alert">Success</div>
+        <div id="responseMsgError" class="alert alert-danger d-none" role="alert"></div>
+
+        <button type="submit" class="btn btn-outline-info" id="submitSearchForm">
+          Search Word
+        </button>
+      </form>
+    </section>
+
+    <section class="my-3 bg-light p-3 rounded">
+      <div id="dictionaryContent">
+        <div id="inputWord"></div>
+        <div id="meanings"></div>
+        <div id="phonetic"></div>
+        <div id="phoneticsAudio"></div>
+        <div id="sourceUrls"></div>
+      </div>
+    </section>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <script src="./../assets/js/script.js"></script>
 
     <footer class="d-flex flex-wrap align-items-center py-3 my-4 border-top">
       <div class="col-md-4 d-flex align-items-center">
