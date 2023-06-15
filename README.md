@@ -20,10 +20,12 @@ WebApp based on an AP
   - [x] request cu ajutorul functiei
   - [x] error handling
 - [x] Implementeaza UI landingpage (Index)
-- [ ] Implementeaza UI dictionary page
-  - [ ] UI form
+- [x] Implementeaza UI dictionary page
+  - [x] UI form
+  - [x] UI pentru datele primite
+    - [x] O componenta card
+    - [x] O componenta audio
+    - [x] O componenta de link
   - [ ] UI lista ultimele n cuvinte cautate
-  - [ ] UI pentru datele primite
-    - [ ] O componenta card
-    - [ ] O componenta audio
-    - [ ] O componenta de link
+  - [ ] Rescrie si curata codul din script.js
+  - [ ] Update UI ca sa se apropie de modelul initial
