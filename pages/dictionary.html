@@ -48,21 +48,33 @@
     <section>
       <form id="searchForm">
         <div class="mb-3">
-          <label for="inputWord" class="form-label">Enter the word</label>
+          <label for="searchInputWord" class="form-label">Enter the word</label>
           <input
             type="text"
             class="form-control"
-            id="inputWord"
-            aria-describedby="inputWord"
+            id="searchInputWord"
+            aria-describedby="searchInputWord"
             placeholder="e.g. morning"
           />
         </div>
-        <button type="submit" class="btn btn-outline-info" id="submitSearchForm">Search Word</button>
+
+        <div id="responseMsgSuccess" class="alert alert-success d-none" role="alert">Success</div>
+        <div id="responseMsgError" class="alert alert-danger d-none" role="alert"></div>
+
+        <button type="submit" class="btn btn-outline-info" id="submitSearchForm">
+          Search Word
+        </button>
       </form>
     </section>
 
     <section class="my-3 bg-light p-3 rounded">
-      <p id="demo">Fetch a file to change this text.</p>
+      <div id="dictionaryContent">
+        <div id="inputWord"></div>
+        <div id="meanings"></div>
+        <div id="phonetic"></div>
+        <div id="phoneticsAudio"></div>
+        <div id="sourceUrls"></div>
+      </div>
     </section>
 
     <script
