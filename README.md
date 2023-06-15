@@ -7,6 +7,7 @@ WebApp based on an AP
 ### Tasks
 
 - [x] Adauga taskuri
+- [ ] Link CDN Bootstrap
 - [ ] Implementeaza navigation bar + paginile necesare (fara continut)
   - [ ] Index.html
   - [ ] Contact.html
