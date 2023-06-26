@@ -5,7 +5,11 @@ function drawMarkUp(data) {
   data.map((el) => {
     html += `
       <div class="card mt-5">
-        <h5 class="card-header" id="inputWord">${el.word}</h5>
+        <h5 class="card-header d-flex justify-content-between" id="inputWord">${
+          el.word
+        } <span class="cursor badge bg-success bg-opacity-50" role="button"
+                onClick="addWordToLocalStorage('${el.word}')">+ Add to words list</span>
+        </h5>
         
         <div class="card-body">        
           ${drawMeanings(el.meanings)}
@@ -67,7 +71,8 @@ const drawMeanings = (el) => {
         
         ${
           row.definitions.length > 0
-            ? '<p class="text-uppercase lead text-underline">Definitions</p>' + drawDefinitions(row.definitions)
+            ? '<p class="text-uppercase lead text-underline">Definitions</p>' +
+              drawDefinitions(row.definitions)
             : ""
         }
     `)
@@ -101,8 +106,21 @@ const drawPhonetics = (el) => {
 const drawSourceURLs = (el) => {
   let html = "";
   el.forEach(
-    (item) => (html += `<a target="_blank" href="${item}" class="btn btn-outline-success">${item}</a>`)
+    (item) =>
+      (html += `<a target="_blank" href="${item}" class="btn btn-outline-success">${item}</a>`)
   );
 
   return html;
 };
+
+function drawMyListOfWords() {
+  let html = "<ul class='list-group list-group-flush'>";
+  let uniqueWords = [...new Set(getWordsFromLocalStorage())];
+
+  uniqueWords.forEach((item) => {
+    html += `<li class="list-group-item">${item}</li>`;
+  });
+
+  html += "</ul>";
+  return (document.getElementById("wordsList").innerHTML = html);
+}

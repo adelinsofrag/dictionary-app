@@ -50,6 +50,15 @@
             <li class="nav-item">
               <a class="nav-link" href="./dictionary.html">Dictionary</a>
             </li>
+            <li class="nav-item">
+              <div
+                onclick="drawMyListOfWords()"
+                role="button"
+                class="nav-link text-bg-success rounded-pill"
+              >
+                My List of Words
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -76,6 +85,8 @@
 
       <div id="responseMsgSuccess" class="alert alert-success d-none" role="alert">Success</div>
       <div id="responseMsgError" class="alert alert-danger d-none" role="alert"></div>
+
+      <div id="wordsList" style="max-height: 200px; overflow-y: scroll" class="border-bottom"></div>
     </section>
 
     <section class="my-3 text-dark" id="responseContent">
@@ -97,6 +108,7 @@
     <script src="./../assets/js/draw.js"></script>
     <script src="./../assets/js/feedback.js"></script>
     <script src="./../assets/js/script.js"></script>
+    <script src="./../assets/js/localStorage.js"></script>
 
     <footer class="d-flex flex-wrap align-items-center py-3 my-4 border-top">
       <div class="col-md-4 d-flex align-items-center">
