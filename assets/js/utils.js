@@ -11,3 +11,21 @@ const doFetchData = (searchItem, language) => {
       .catch((error) => showError("Server Error", error));
   }
 };
+
+const doSearch = (word) => {
+  doFetchData(word, "en");
+
+  document.querySelector("#searchInputWord").value = word;
+};
+
+function initialize() {
+  const urlParams = new URL(window.location.toString()).searchParams;
+
+  const existingWordValue = urlParams.get("word");
+
+  if (!!existingWordValue) {
+    doSearch(existingWordValue);
+  }
+}
+
+setTimeout(initialize, 1500);

@@ -59,63 +59,35 @@
               <a class="nav-link" href="./dictionary.html">Dictionary</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-bg-success rounded-pill" href="./words.html">Words</a>
+              <a
+                class="nav-link text-bg-success rounded-pill"
+                href="./words.html"
+                >Words</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <section>
-      <form id="searchForm" class="my-5">
-        <div class="my-3">
-          <label for="searchInputWord" class="form-label">Search</label>
-          <input
-            type="text"
-            class="form-control"
-            id="searchInputWord"
-            aria-describedby="searchInputWord"
-            placeholder="e.g. morning"
-          />
-        </div>
-
-        <button
-          type="submit"
-          class="btn btn-outline-success"
-          id="submitSearchForm"
+    <section class="container my-5" id="wordsArea">
+      <ul class="list-group">
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
         >
-          <span class="material-symbols-outlined"> search </span>
-          Search Word
-        </button>
-      </form>
-
-      <div
-        id="responseMsgSuccess"
-        class="alert alert-success d-none"
-        role="alert"
-      >
-        Success
-      </div>
-      <div
-        id="responseMsgError"
-        class="alert alert-danger d-none"
-        role="alert"
-      ></div>
-
-      <div
-        id="wordsList"
-        style="max-height: 200px; overflow-y: scroll"
-        class="border-bottom"
-      ></div>
-    </section>
-
-    <section class="my-3 text-dark" id="responseContent">
-      <p class="card-text placeholder-glow">
-        <span class="placeholder col-8"></span>
-        <span class="placeholder col-6"></span>
-        <span class="placeholder col-4"></span>
-        <span class="placeholder col-7"></span>
-      </p>
+          <span class="placeholder rounded-pill w-50">Word</span>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+        >
+          <span class="placeholder rounded-pill w-25">Word</span>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+        >
+          <span class="placeholder rounded-pill w-75">Word</span>
+        </li>
+      </ul>
     </section>
 
     <script
@@ -132,10 +104,7 @@
       </div>
     </footer>
 
-    <script src="./../assets/js/utils.js"></script>
-    <script src="./../assets/js/draw.js"></script>
-    <script src="./../assets/js/feedback.js"></script>
-    <script src="./../assets/js/script.js"></script>
     <script src="./../assets/js/localStorage.js"></script>
+    <script src="./../assets/js/words.js"></script>
   </body>
 </html>

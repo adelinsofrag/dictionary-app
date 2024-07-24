@@ -8,7 +8,9 @@ function drawMarkUp(data) {
         <h5 class="card-header d-flex justify-content-between" id="inputWord">${
           el.word
         } <span class="cursor badge bg-success bg-opacity-50" role="button"
-                onClick="addWordToLocalStorage('${el.word}')">+ Add to words list</span>
+                onClick="addWordToLocalStorage('${
+                  el.word
+                }')">+ Add to words list</span>
         </h5>
         
         <div class="card-body">        
@@ -16,7 +18,9 @@ function drawMarkUp(data) {
           
           ${drawPhonetics(el.phonetics)}
           
-          <a target="_blank" href="${el.license.url}" class="btn btn-outline-success">
+          <a target="_blank" href="${
+            el.license.url
+          }" class="btn btn-outline-success">
             ${el.license.name}
           </a>
           
@@ -28,19 +32,27 @@ function drawMarkUp(data) {
   responseContentContainer.innerHTML = html;
   return;
 }
+
 const drawDefinitions = (items) => {
   let defHTML = "";
-  items.forEach((item) => (defHTML += `<p class="font-monospace">${item.definition}</p>`));
+  items.forEach(
+    (item) => (defHTML += `<p class="font-monospace">${item.definition}</p>`)
+  );
 
   return defHTML;
 };
+
 const drawAList = (list) => {
   let listHTML = `<div class="row row-cols-auto">`;
-  list.forEach((s) => (listHTML += `<span class="col rounded-pill text-bg-light">${s}</span>`));
+  list.forEach(
+    (s) =>
+      (listHTML += `<span class="col rounded-pill text-bg-light">${s}</span>`)
+  );
   listHTML += "</div>";
 
   return listHTML;
 };
+
 const drawMeanings = (el) => {
   let html = "";
   el.forEach(
@@ -79,6 +91,7 @@ const drawMeanings = (el) => {
   );
   return html;
 };
+
 const drawPhonetics = (el) => {
   let html = "";
 
